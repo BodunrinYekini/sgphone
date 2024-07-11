@@ -27,7 +27,7 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/generic_system.mk)
 
-DEVICE_PATH := device/ohrtech/sgphone
+DEVICE_PATH := device/SG/sgphone
 
 # Enable mainline checking
 PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS := true
@@ -50,7 +50,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_release.mk)
 
 
 #product overlay
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
 Gallery2 \
 Launcher3QuickStepGo \
 SysuiGoConfigOverlay \
@@ -64,9 +64,9 @@ PRODUCT_BRAND := SG
 PRODUCT_MODEL := sgphone
 PRODUCT_MANUFACTURER := SG
 
-PRODUCT_GMS_CLIENTID_BASE := android-ohrtech
+PRODUCT_GMS_CLIENTID_BASE := android-sgphone
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="sgphone_Natv-userdebug 13 TP1A.220624.014 20231108-114636 test-keys"
 
-BUILD_FINGERPRINT := OhrTech/sgphone_Natv/sgphone:13/TP1A.220624.014/20231108-114636:userdebug/test-keys
+BUILD_FINGERPRINT := SG/sgphone_Natv/sgphone:13/TP1A.220624.014/20231108-114636:userdebug/test-keys
