@@ -30,6 +30,12 @@ DONT_DEXPREOPT_PREBUILTS := true
 
 include device/generic/common/mgsi/BoardConfigMgsiCommon.mk
 
+BOARD_AVB_ALGORITHM := SHA256_RSA2048
+BOARD_USES_SYSTEMIMAGE := true
+BOARD_SYSTEMIMAGE_FILE_SYSTEM_TYPE := erofs
+TARGET_COPY_OUT_SYSTEM := system
+BOARD_AVB_SYSTEM_ALGORITHM := $(BOARD_AVB_ALGORITHM)
+
 # Emulator system image is going to be used as GSI and some vendor still hasn't
 # cleaned up all device specific directories under root!
 
