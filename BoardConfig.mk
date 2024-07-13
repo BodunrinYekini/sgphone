@@ -35,6 +35,8 @@ BOARD_USES_SYSTEMIMAGE := true
 BOARD_SYSTEMIMAGE_FILE_SYSTEM_TYPE := erofs
 TARGET_COPY_OUT_SYSTEM := system
 BOARD_AVB_SYSTEM_ALGORITHM := $(BOARD_AVB_ALGORITHM)
+BOARD_AVB_SYSTEM_ADD_HASHTREE_FOOTER_ARGS += --hash_algorithm sha256
+BOARD_AVB_SYSTEM_ADD_HASHTREE_FOOTER_ARGS += --flags 0
 
 # Emulator system image is going to be used as GSI and some vendor still hasn't
 # cleaned up all device specific directories under root!
