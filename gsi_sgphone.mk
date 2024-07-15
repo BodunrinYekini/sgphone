@@ -58,10 +58,10 @@ WallpaperOverlay \
 framework-res_navbar_rro
 
 
-PRODUCT_DEVICE := sgphone
+PRODUCT_DEVICE := SG Phone
 PRODUCT_NAME := gsi_sgphone
 PRODUCT_BRAND := SG
-PRODUCT_MODEL := sgphone
+PRODUCT_MODEL := SG Phone
 PRODUCT_MANUFACTURER := SG
 
 PRODUCT_GMS_CLIENTID_BASE := android-sgphone
